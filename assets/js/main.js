@@ -1,9 +1,9 @@
 
-
 const pokemonList = document.getElementById('pokemonList')
 const loadMoreButton = document.getElementById('loadMoreButton')
 
-const maxRecords = 151
+let search = document.getElementById('search');
+const maxRecords = 151;
 const limit = 16;
 let offset = 0;
 
@@ -21,18 +21,6 @@ function convertPokemonToLi(pokemon) {
             </div>
         </li>
     `
-}
-
-function listPokemonByName(){
-    var inputPokemon = document.getElementById("search");
-    const pokemons = pokeApi.getPokemonDetail;
-    console.log("You are searching for: " + inputPokemon.value);
-
-    if (inputPokemon.value == pokemons) {
-        console.log("existe")
-    } else {
-        console.log("existe não")
-    }
 }
 
 function loadPokemonItens(offset, limit) {
@@ -58,3 +46,15 @@ loadMoreButton.addEventListener('click', () => {
     }
  
 })
+
+var searchValue = "";
+
+function listPokemonByName () {
+    searchValue = document.getElementById('search').value;
+    
+
+console.log(searchValue)
+
+   
+        
+}

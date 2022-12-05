@@ -25,7 +25,7 @@ body{
     height: 110px;
 }
 
-.search{
+#search{
     height: 25px;
     border: 2px solid rgb(39, 94, 214);
     border-radius: 1rem;
